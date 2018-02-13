@@ -1,0 +1,138 @@
+<div class="container-fluid px-5 mt-5 mb-4">
+
+  <div class="row" *ngIf="summary">
+
+    <div class="col-xl-3 col-lg-6">
+      <app-widget [header]="'Income'" [addClass]="'headerline-danger small shadow-01'" [badge]="summary.income.badge">
+        <app-stat
+          [header]="summary.income.header"
+          [excerpt]="summary.income.excerpt">
+        </app-stat>
+      </app-widget>
+    </div>
+
+    <div class="col-xl-3 col-lg-6">
+      <app-widget [header]="'Visits'" [addClass]="'headerline-danger small shadow-01'" [badge]="summary.visits.badge">
+        <app-stat
+          [header]="summary.visits.header"
+          [excerpt]="summary.visits.excerpt">
+        </app-stat>
+      </app-widget>
+    </div>
+
+    <div class="col-xl-3 col-lg-6">
+      <app-widget [header]="'Orders'" [addClass]="'headerline-danger small shadow-01'" [badge]="summary.orders.badge">
+        <app-stat
+          [header]="summary.orders.header"
+          [excerpt]="summary.orders.excerpt">
+        </app-stat>
+      </app-widget>
+    </div>
+
+    <div class="col-xl-3 col-lg-6">
+      <app-widget [header]="'New Accounts'" [addClass]="'headerline-danger small shadow-01'" [badge]="summary.new_accounts.badge">
+        <app-stat
+          [header]="summary.new_accounts.header"
+          [excerpt]="summary.new_accounts.excerpt">
+        </app-stat>
+      </app-widget>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-12">
+      <app-widget [header]="'Sales'" [addClass]="'shadow-01'" [excerpt]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'">
+        <div class="row">
+          <div class="col-lg-8 py-3 my-3" *ngIf="charts">
+            <canvas baseChart
+                    [chartType]="charts.barChart.type"
+                    [labels]="charts.barChart.labels"
+                    [datasets]="charts.barChart.datasets"
+                    [options]="charts.barChart.options"
+                    [colors]="charts.barChart.colors">
+            </canvas>
+          </div>
+          <div class="col-4">
+            <app-progress-list [list]="sales"></app-progress-list>
+          </div>
+        </div>
+      </app-widget>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-xl-4 col-lg-6">
+      <app-widget [header]="'Incoming Messages'" [addClass]="'shadow-01'" [excerpt]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit'">
+        <div class="mb-4">
+          <h5 class="tab-title" *ngIf="messages">{{messages.length}} Notes Received</h5>
+        </div>
+        <app-messages [messages]="messages"></app-messages>
+      </app-widget>
+    </div>
+
+    <div class="col-xl-8 col-lg-6">
+
+      <div class="row">
+
+        <div class="col-lg-12" *ngIf="charts">
+          <app-widget [header]="'Views'" [addClass]="'shadow-01'" [excerpt]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'">
+            <canvas baseChart
+                    [chartType]="charts.lineChart.type"
+                    [labels]="charts.lineChart.labels"
+                    [datasets]="charts.lineChart.datasets"
+                    [options]="charts.lineChart.options"
+                    [colors]="charts.lineChart.colors">
+            </canvas>
+          </app-widget>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-xl-4 col-md-12" *ngIf="charts">
+          <app-widget [header]="'Traffic Source'" [addClass]="'shadow-01'" [excerpt]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore'">
+            <canvas baseChart
+                    [chartType]="charts.doughnutChart.type"
+                    [labels]="charts.doughnutChart.labels"
+                    [datasets]="charts.doughnutChart.datasets"
+                    [options]="charts.doughnutChart.options"
+                    [colors]="charts.doughnutChart.colors">
+            </canvas>
+          </app-widget>
+        </div>
+
+        <div class="col-xl-4 col-md-12" *ngIf="charts">
+          <app-widget [header]="'Geography'" [addClass]="'shadow-01'" [excerpt]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore'">
+            <canvas baseChart
+                    [chartType]="charts.pieChart.type"
+                    [labels]="charts.pieChart.labels"
+                    [datasets]="charts.pieChart.datasets"
+                    [options]="charts.pieChart.options"
+                    [colors]="charts.pieChart.colors">
+            </canvas>
+          </app-widget>
+        </div>
+
+        <div class="col-xl-4 col-md-12" *ngIf="charts">
+          <app-widget [header]="'Radar Chart'" [addClass]="'shadow-01'" [excerpt]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'">
+            <canvas baseChart
+                    [chartType]="charts.radarChart.type"
+                    [labels]="charts.radarChart.labels"
+                    [datasets]="charts.radarChart.datasets"
+                    [options]="charts.radarChart.options"
+                    [colors]="charts.radarChart.colors">
+            </canvas>
+          </app-widget>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

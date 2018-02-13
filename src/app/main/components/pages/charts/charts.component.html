@@ -1,0 +1,67 @@
+<div class="container-fluid px-5 mb-4">
+
+  <div class="row">
+
+    <div class="col-lg-12">
+      <app-widget [header]="'Line Chart'" [addClass]="'shadow-01'" [excerpt]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'">
+        <canvas baseChart
+                [chartType]="charts.lineChart.type"
+                [labels]="charts.lineChart.labels"
+                [datasets]="charts.lineChart.datasets"
+                [options]="charts.lineChart.options"
+                [colors]="charts.lineChart.colors">
+        </canvas>
+      </app-widget>
+    </div>
+
+    <div class="col-xl-6">
+      <app-widget [header]="'Bar Chart'" [addClass]="'shadow-01'" [excerpt]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'">
+        <canvas baseChart
+                [chartType]="charts.barChart.type"
+                [labels]="charts.barChart.labels"
+                [datasets]="charts.barChart.datasets"
+                [options]="charts.barChart.options"
+                [colors]="charts.barChart.colors">
+        </canvas>
+      </app-widget>
+    </div>
+
+    <div class="col-xl-6">
+      <app-widget [header]="'Doughnut Chart'" [addClass]="'shadow-01'" [excerpt]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'">
+        <canvas baseChart
+                [chartType]="charts.doughnutChart.type"
+                [labels]="charts.doughnutChart.labels"
+                [datasets]="charts.doughnutChart.datasets"
+                [options]="charts.doughnutChart.options"
+                [colors]="charts.doughnutChart.colors">
+        </canvas>
+      </app-widget>
+    </div>
+
+    <div class="col-xl-6">
+      <app-widget [header]="'Pie Chart'" [addClass]="'shadow-01'" [excerpt]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'">
+        <canvas baseChart
+                [chartType]="charts.pieChart.type"
+                [labels]="charts.pieChart.labels"
+                [datasets]="charts.pieChart.datasets"
+                [options]="charts.pieChart.options"
+                [colors]="charts.pieChart.colors">
+        </canvas>
+      </app-widget>
+    </div>
+
+    <div class="col-xl-6">
+      <app-widget [header]="'Radar Chart'" [addClass]="'shadow-01'" [excerpt]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'">
+        <canvas baseChart
+                [chartType]="charts.radarChart.type"
+                [labels]="charts.radarChart.labels"
+                [datasets]="charts.radarChart.datasets"
+                [options]="charts.radarChart.options"
+                [colors]="charts.radarChart.colors">
+        </canvas>
+      </app-widget>
+    </div>
+
+  </div>
+
+</div>

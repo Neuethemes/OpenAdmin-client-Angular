@@ -1,0 +1,47 @@
+<form [formGroup]="registerForm" class="mt-4" (ngSubmit)="registerForm.valid && register()" novalidate>
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <input formControlName="firstName" type="text" class="form-control" placeholder="First name" required>
+      <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)" class="help-block text-danger">
+        First name is required
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <input formControlName="lastName" type="text" class="form-control" placeholder="Last name" required>
+      <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)" class="help-block text-danger">
+        Last name is required
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 mb-4">
+      <input formControlName="email" type="email" class="form-control" placeholder="Enter email" required>
+      <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <div *ngIf="email.invalid && (email.dirty || email.touched)" class="help-block text-danger">
+        Email is required
+      </div>
+    </div>
+  </div>
+  <div formGroupName="matchingPassword">
+    <div class="row">
+      <div class="col-md-12 mb-4">
+        <input formControlName="password" type="password" class="form-control" placeholder="Password" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mb-4">
+        <input formControlName="passwordConfirm" type="password" class="form-control" placeholder="Repeat Password" required>
+      </div>
+    </div>
+    <div *ngIf="matchingPassword.invalid && (matchingPassword.dirty || matchingPassword.touched)" class="help-block text-danger">
+      Password mismatch
+    </div>
+  </div>
+  <div class="form-check mb-4">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input mr-1">
+      I agree the Terms and Conditions
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+</form>

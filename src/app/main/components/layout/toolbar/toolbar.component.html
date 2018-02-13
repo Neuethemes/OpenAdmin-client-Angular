@@ -1,0 +1,122 @@
+<div class="navbar navbar-light bg-white px-3 px-sm-5 py-3">
+
+  <div class="d-inline-block mr-3">
+    <a class="btn btn-dark btn-icon rounded-circle" aria-controls="sidebarLeft" tabindex="1"
+       (click)="_layoutService.isSidebarLeftCollapsed=!_layoutService.isSidebarLeftCollapsed" [attr.aria-expanded]="!_layoutService.isSidebarLeftCollapsed">
+      <i class="fa fa-navicon"></i>
+    </a>
+  </div>
+
+  <form class="search-form form-inline my-2 my-lg-0">
+    <div class="input-group input-group-built-in">
+      <input type="text" class="form-control rounded-1" placeholder="Search for something..." aria-label="Search for something...">
+      <span class="input-group-btn">
+        <a href="#" class="btn btn-icon">
+          <i class="fa fa-search"></i>
+        </a>
+      </span>
+    </div>
+  </form>
+
+  <ul class="nav ml-auto">
+
+    <li class="m-sm-1 m-md-2" ngbDropdown>
+      <a class="btn btn-light btn-icon rounded-circle position-relative" ngbDropdownToggle id="dropdownBasic1">
+        <i class="fa fa-bell" aria-hidden="true"></i>
+        <span class="badge badge-hint badge-primary">8</span>
+      </a>
+
+      <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu aria-labelledby="dropdownBasic1">
+
+        <ul class="list-unstyled">
+          <li class="dropdown-item media border-bottom-1 border-light p-4">
+            <span class="btn btn-success btn-icon rounded-circle mr-3">
+              <i class="fa fa-download" aria-hidden="true"></i>
+            </span>
+            <div class="media-body">
+              <div class="d-flex w-100 justify-content-between">
+                <h6 class="mb-1 mr-4">Update downloaded Successfully</h6>
+                <small class="text-nowrap text-muted">3 days ago</small>
+              </div>
+              Lorem ipsum dolor sit amet, consectetur ...
+              <small class="text-muted d-block">11.06.2014 - 2:30am - 2:46am</small>
+            </div>
+          </li>
+          <li class="dropdown-item media border-bottom-1 border-light p-4">
+            <span class="btn btn-danger btn-icon rounded-circle mr-3">
+              <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            </span>
+            <div class="media-body">
+              <div class="d-flex w-100 justify-content-between">
+                <h6 class="mb-1 mr-4">Connection was interrupted!</h6>
+                <small class="text-nowrap text-muted">3 days ago</small>
+              </div>
+              Lorem ipsum dolor sit amet, consectetur ...
+              <small class="text-muted d-block">11.06.2014 - 2:30am - 2:46am</small>
+            </div>
+          </li>
+        </ul>
+
+        <div class="media d-flex pl-4 pr-4 pt-3 pb-3">
+          <a href="#!">See all Alerts</a>
+        </div>
+
+      </div>
+    </li>
+
+    <li class="m-sm-1 m-md-2" ngbDropdown>
+      <a class="btn btn-light btn-icon rounded-circle position-relative" ngbDropdownToggle id="dropdownBasic2">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <span class="badge badge-hint badge-success">16</span>
+      </a>
+
+      <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu aria-labelledby="dropdownBasic2">
+
+        <app-messages [messages]="messages"></app-messages>
+
+        <div class="media d-flex pl-4 pr-4 pt-3 pb-3">
+          <a href="#!">Read all Messages</a>
+        </div>
+
+      </div>
+
+    </li>
+
+    <li class="m-sm-1 m-md-2">
+      <a class="btn btn-light btn-icon rounded-circle" aria-controls="sidebarRight" tabindex="2"
+         (click)="_layoutService.isSidebarRightCollapsed=!_layoutService.isSidebarRightCollapsed" [attr.aria-expanded]="!_layoutService.isSidebarRightCollapsed">
+        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+      </a>
+    </li>
+
+    <li class="m-sm-1 m-md-2" ngbDropdown>
+      <a data-toggle="dropdown" ngbDropdownToggle id="dropdownBasic3">
+        <div class="d-inline-block mr-2">
+          <img [src]="currentUser.avatar" class="rounded-circle" height="32px">
+        </div>
+        <div class="d-none d-lg-inline-block">
+          <span class="d-block">{{currentUser.firstName}} {{currentUser.lastName}}</span>
+        </div>
+      </a>
+
+      <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu aria-labelledby="dropdownBasic3" style="min-width: 150px;">
+        <a class="dropdown-item" href="#">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i> Profile
+        </a>
+        <a class="dropdown-item" href="#">
+          <i class="fa fa-address-card-o" aria-hidden="true"></i> Contacts
+        </a>
+        <a class="dropdown-item" href="#">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i> Mailbox
+        </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" [routerLink]="['/login']">
+          <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+        </a>
+      </div>
+
+    </li>
+
+  </ul>
+
+</div>

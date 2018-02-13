@@ -1,0 +1,22 @@
+<form [formGroup]="loginForm" class="mt-4" (ngSubmit)="loginForm.valid && login()" novalidate>
+  <div class="form-group mb-4">
+    <input formControlName="email" type="email" class="form-control" placeholder="Enter email" required>
+    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="help-block text-danger">
+      Email is required
+    </div>
+  </div>
+  <div class="form-group">
+    <input formControlName="password" type="password" class="form-control" placeholder="Password" required>
+    <div *ngIf="password.invalid && (password.dirty || password.touched)" class="help-block text-danger">
+      Password is required
+    </div>
+  </div>
+  <div class="form-check mb-4">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input mr-1">
+      Remember me
+    </label>
+    <span class="forgot float-right"><a href="#">Forgot password?</a></span>
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg btn-block">Log in</button>
+</form>

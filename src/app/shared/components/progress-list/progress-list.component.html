@@ -1,0 +1,7 @@
+<div class="mt-3" *ngFor="let item of list">
+  <p class="{{item.title_class||'h6'}} widget-title">{{item.title}}</p>
+  <p class="text-muted">{{item.excerpt}}</p>
+  <p>
+    <ngb-progressbar type="{{item.type}}" [value]="item.val" height="{{item.height||'2px'}}"></ngb-progressbar>
+  </p>
+</div>

@@ -1,0 +1,19 @@
+<section class="widget" [ngClass]="addClass">
+
+  <div class="widget-block">
+    <header>
+      <h3 class="widget-title" *ngIf="header">{{header}}</h3>
+      <p class="text-muted" *ngIf="excerpt">{{excerpt}}</p>
+    </header>
+    <div class="widget-content pt-1">
+      <ng-content></ng-content>
+    </div>
+    <footer>
+      <a href="#">See More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+    </footer>
+  </div>
+  <span class="badge badge-{{badge.type}}" *ngIf="badge">
+    {{badge.val}} <i class="{{badge.ico}}" aria-hidden="true"></i>
+  </span>
+
+</section>

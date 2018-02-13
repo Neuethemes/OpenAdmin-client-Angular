@@ -1,0 +1,589 @@
+<div class="content-wrapper container-fluid px-5 mb-4 trans-03-in-out">
+
+  <div class="row">
+
+
+    <div class="col-lg-6 mb-3">
+      <section class="widget shadow-01 mb-4" id="widget-01">
+        <div class="widget-block">
+
+          <header>
+            <h3>Form controls</h3>
+            <p class="text-muted">
+              Textual form controls—like <code>&lt;input&gt;</code>s, <code>&lt;select&gt;</code>s, and <code>&lt;textarea&gt;</code>s—are styled with
+              the .form-control class.
+            </p>
+          </header>
+          <div class="widget-content py-3">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">Example multiple select</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-6 mb-3">
+      <section class="widget shadow-01 mb-4" id="widget-02">
+        <div class="widget-block">
+
+          <header>
+            <h3>Sizing</h3>
+            <p class="text-muted">
+              Set heights using classes like <code>.form-control-lg</code> and <code>.form-control-sm</code>.
+            </p>
+          </header>
+          <div class="widget-content py-3">
+            <form class="py-4">
+              <h4>Input</h4>
+              <input class="form-control form-control-lg mb-3" type="text" placeholder=".form-control-lg">
+              <input class="form-control mb-3" type="text" placeholder="Default input">
+              <input class="form-control form-control-sm mb-3" type="text" placeholder=".form-control-sm">
+            </form>
+            <form class="py-4">
+              <h4>Select</h4>
+              <select class="form-control form-control-lg mb-1">
+                <option>Large select</option>
+              </select>
+              <select class="form-control mb-1">
+                <option>Default select</option>
+              </select>
+              <select class="form-control form-control-sm mb-1">
+                <option>Small select</option>
+              </select>
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-6 mb-3">
+      <section class="widget shadow-01 mb-4" id="widget-03">
+        <div class="widget-block">
+
+          <header>
+            <h3>Form groups</h3>
+            <p class="text-muted">
+              The <code>.form-group</code> class is the easiest way to add some structure to forms.
+            </p>
+          </header>
+          <div class="widget-content py-3">
+
+            <div class="form-group">
+              <label class="form-control-label" for="formGroupExampleInput">Example label</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+            </div>
+            <div class="form-group">
+              <label class="form-control-label" for="formGroupExampleInput2">Another label</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-6 mb-3">
+      <section class="widget shadow-01 mb-4" id="widget-04">
+        <div class="widget-block">
+
+          <header>
+            <h3>Checkboxes and radios</h3>
+            <p class="text-muted">
+              Default checkboxes and radios are improved upon with the help of <code>.form-check</code>, a single class for both input types that
+              improves the layout and behavior of their HTML elements.
+            </p>
+          </header>
+          <div class="widget-content py-3">
+
+            <div class="row">
+              <div class="col-6">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    Option one is this and that
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    Option two can be something else
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                    Option three is disabled
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="col-6">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Option one is this and that
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" disabled>
+                    Option two is disabled
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="col-6">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                  </label>
+                </div>
+                <div class="form-check form-check-inline disabled">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> 3
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="col-6">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> 1
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> 2
+                  </label>
+                </div>
+                <div class="form-check form-check-inline disabled">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled> 3
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="col-6">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                  </label>
+                </div>
+
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                  </label>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-4 mb-3">
+      <section class="widget shadow-01 mb-4" id="widget-05">
+        <div class="widget-block">
+
+          <header>
+            <h3>Readonly</h3>
+            <p class="text-muted">
+              Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input’s value.
+            </p>
+          </header>
+          <div class="widget-content py-3">
+            <form>
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-4 mb-3">
+      <section class="widget shadow-01 mb-4" id="widget-06">
+        <div class="widget-block">
+
+          <header>
+            <h3>Form grid</h3>
+            <p class="text-muted">
+              More complex forms can be built using our grid classes.
+            </p>
+          </header>
+          <div class="widget-content py-3">
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-4 mb-3">
+      <section class="widget shadow-01 mb-4" id="widget-07">
+        <div class="widget-block">
+
+          <header>
+            <h3>Form row</h3>
+            <p class="text-muted">
+              You may also swap <code>.row</code> for <code>.form-row</code>, a variation of our standard grid row that overrides the default column
+              gutters for tighter and more compact layouts.
+            </p>
+          </header>
+          <div class="widget-content py-3">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-12 mb-3">
+      <section class="widget shadow-01 mb-4" id="widget-08">
+        <div class="widget-block">
+
+          <header>
+            <h3>Complex layout</h3>
+            <p class="text-muted">
+              More complex layouts can also be created with the grid system.
+            </p>
+          </header>
+          <div class="widget-content py-3">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4" class="col-form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4" class="col-form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress" class="col-form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2" class="col-form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity" class="col-form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState" class="col-form-label">State</label>
+                <select id="inputState" class="form-control">
+                  <option>Choose</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip" class="col-form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-6 mb-3">
+      <section class="widget shadow-01 mb-4" id="widget-09">
+        <div class="widget-block">
+
+          <header>
+            <h3>Horizontal form</h3>
+            <p class="text-muted">
+              Create horizontal forms with the grid by adding the <code>.row</code> class to form groups and using the <code>.col-*-*</code> classes to
+              specify the width of your labels and controls.
+            </p>
+          </header>
+          <div class="widget-content py-3">
+            <div class="container">
+              <form>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                <fieldset class="form-group">
+                  <div class="row">
+                    <label class="col-form-legend col-sm-2">Radios</label>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                          Option one is this and that&mdash;be sure to include why it's great
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                          Option two can be something else and selecting it will deselect option one
+                        </label>
+                      </div>
+                      <div class="form-check disabled">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                          Option three is disabled
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="form-group row">
+                  <div class="col-sm-2">Checkbox</div>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Check me out
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-6 mb-3">
+      <section class="widget shadow-01 mb-4" id="widget-10">
+        <div class="widget-block">
+
+          <header>
+            <h3>Validation</h3>
+            <p class="text-muted">
+              Provide valuable, actionable feedback to your users with HTML5 form validation–available in all our supported browsers.
+            </p>
+          </header>
+          <div class="widget-content py-3">
+            <form class="container" id="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationCustom01">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="validationCustom02">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationCustom03">City</label>
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationCustom04">State</label>
+                  <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationCustom05">Zip</label>
+                  <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
+
+            <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function () {
+                "use strict";
+                window.addEventListener("load", function () {
+                  var form = document.getElementById("needs-validation");
+                  form.addEventListener("submit", function (event) {
+                    if (form.checkValidity() == false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  }, false);
+                }, false);
+              }());
+            </script>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-6 mb-3">
+      <section class="widget shadow-01 mb-4" id="widget-11">
+        <div class="widget-block">
+
+          <header>
+            <h3>Column sizing</h3>
+            <p class="text-muted">
+              As shown in the previous examples, our grid system allows you to place any number of <code>.cols</code> within a <code>.row</code> or
+              <code>.form-row</code>.
+            </p>
+          </header>
+          <div class="widget-content py-3">
+            <form>
+              <div class="form-row">
+                <div class="col-7">
+                  <input type="text" class="form-control" placeholder="City">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="State">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Zip">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-6 mb-3">
+      <section class="widget shadow-01 mb-4" id="widget-12">
+        <div class="widget-block">
+
+          <header>
+            <h3>Auto-sizing</h3>
+            <p class="text-muted">
+              The example below uses a flexbox utility to vertically center the contents and changes <code>.col</code> to <code>.col-auto</code> so that
+              your columns only take up as much space as needed.
+            </p>
+          </header>
+          <div class="widget-content py-3">
+            <form>
+              <div class="form-row align-items-center">
+                <div class="col-auto">
+                  <label class="sr-only" for="inlineFormInput">Name</label>
+                  <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="Jane Doe">
+                </div>
+                <div class="col-auto">
+                  <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                  <div class="input-group mb-2 mb-sm-0">
+                    <div class="input-group-addon">@</div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="form-check mb-2 mb-sm-0">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox"> Remember me
+                    </label>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+</div>

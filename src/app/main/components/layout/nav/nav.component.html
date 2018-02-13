@@ -1,0 +1,132 @@
+<nav class="sidebar-nav">
+  <!-- Sidebar Menu -->
+  <div class="mb-1 text-uppercase d-none d-lg-block text-muted">
+    <small>General</small>
+  </div>
+  <ul id="sidebarNav" class="nav nav-dark flex-column">
+    <li class="nav-item">
+      <a class="nav-link collapsed" aria-controls="cNavItem1" (click)="showItem=showItem==1?0:1" [attr.aria-expanded]="showItem==1||false">
+        <i class="fa fa-tachometer" aria-hidden="true"></i>
+        <span class="d-none d-lg-inline">Dashboards</span>
+      </a>
+      <ul id="cNavItem1" class="nav flex-column collapse bg-dark" [ngbCollapse]="showItem!=1">
+        <li class="nav-item">
+          <a class="nav-link nav-level-1" routerLink="/dashboard">Dashboard 1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/charts">
+        <i class="fa fa-pie-chart" aria-hidden="true"></i>
+        <span class="d-none d-lg-inline">Charts</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/widgets">
+        <i class="fa fa-list" aria-hidden="true"></i>
+        <span class="d-none d-lg-inline">Widgets</span>
+        <span class="badge badge-success text-uppercase float-right d-none d-lg-block">New</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/tables">
+        <i class="fa fa-table" aria-hidden="true"></i>
+        <span class="d-none d-lg-inline">Tables</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" aria-controls="cNavItem2" (click)="showItem=showItem==2?0:2" [attr.aria-expanded]="showItem==2||false">
+        <i class="fa fa-sitemap" aria-hidden="true"></i>
+        <span class="d-none d-lg-inline">Menu Levels</span>
+      </a>
+      <ul id="cNavItem2" class="nav flex-column collapse bg-dark" [ngbCollapse]="showItem!=2">
+        <li class="nav-item">
+          <a class="nav-link nav-level-1" href="#">Level 1-1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed nav-level-1" aria-controls="cNavItem3" (click)="showSubItem1=!showSubItem1" [attr.aria-expanded]="showSubItem1||false">
+            Level 1-2
+          </a>
+          <ul id="cNavItem3" class="nav flex-column collapse" [ngbCollapse]="!showSubItem1">
+            <li class="nav-item">
+              <a class="nav-link nav-level-2" href="#">Level 2-1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link collapsed nav-level-2" aria-controls="cNavItem4" (click)="showSubItem2=!showSubItem2" [attr.aria-expanded]="showSubItem2||false">
+                Level 2-2
+              </a>
+              <ul id="cNavItem4" class="nav flex-column collapse" [ngbCollapse]="!showSubItem2">
+                <li class="nav-item">
+                  <a class="nav-link nav-level-3" href="#">Level 3-1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-level-3" href="#">Level 3-2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/grid">
+        <i class="fa fa-th" aria-hidden="true"></i>
+        <span class="d-none d-lg-inline">Grid</span>
+        <span class="badge badge-danger text-uppercase float-right d-none d-lg-block">Hot</span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="mt-4 mb-1 text-uppercase d-none d-lg-block text-muted">
+    <small>Extras</small>
+  </div>
+  <ul class="nav nav-dark flex-column">
+    <li class="nav-item">
+      <a class="nav-link collapsed" aria-controls="cNavItem6" (click)="showItem=showItem==6?0:6" [attr.aria-expanded]="showItem==6||false">
+        <i class="fa fa-files-o" aria-hidden="true"></i>
+        <span class="d-none d-lg-inline">Pages</span>
+      </a>
+      <ul id="cNavItem6" class="nav flex-column collapse bg-dark" [ngbCollapse]="showItem!=6">
+        <li class="nav-item">
+          <a class="nav-link nav-level-1" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-level-1" routerLink="/404">404 Error</a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" aria-controls="cNavItem5" (click)="showItem=showItem==5?0:5" [attr.aria-expanded]="showItem==5||false">
+        <i class="fa fa-suitcase" aria-hidden="true"></i>
+        <span class="d-none d-lg-inline">UI Elements</span>
+      </a>
+      <ul id="cNavItem5" class="nav flex-column collapse bg-dark" [ngbCollapse]="showItem!=5">
+        <li class="nav-item">
+          <a class="nav-link nav-level-1" routerLink="/buttons">Buttons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-level-1" routerLink="/typography">Typography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-level-1" routerLink="/icons">Icons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-level-1" routerLink="/navs">Navs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-level-1" routerLink="/badges">Badges, Labels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-level-1" routerLink="/progress">Progress</a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/forms">
+        <i class="fa fa-id-card" aria-hidden="true"></i>
+        <span class="d-none d-lg-inline">Forms</span>
+      </a>
+    </li>
+  </ul>
+
+</nav>

@@ -1,0 +1,13 @@
+<ul class="list-unstyled">
+  <li class="media border-bottom-1 border-light p-4" *ngFor="let message of messages">
+    <img [src]="message.avatar" height="44px" class="rounded-circle d-flex mr-3" [alt]="message.name">
+    <div class="media-body">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1 mr-4">{{message.header}}</h6>
+        <small class="text-secondary">5 hrs ago</small>
+      </div>
+      {{message.content}}
+      <small class="text-muted d-block">{{message.name}} at 2:30 am 11.06.2014</small>
+    </div>
+  </li>
+</ul>
