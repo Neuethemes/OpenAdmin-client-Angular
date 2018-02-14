@@ -20,7 +20,7 @@ export class AppComponent {
           }
           let currentUrlSlug = event.url.slice(1);
           if (currentUrlSlug) {
-            currentUrlSlug = 'page-' + currentUrlSlug.split("?")[0];
+            currentUrlSlug = 'page-' + currentUrlSlug.split('?')[0];
             this.renderer.addClass(document.body, currentUrlSlug);
           }
           this.previousUrl = currentUrlSlug;

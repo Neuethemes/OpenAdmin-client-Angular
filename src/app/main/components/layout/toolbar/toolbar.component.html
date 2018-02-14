@@ -2,7 +2,7 @@
 
   <div class="d-inline-block mr-3">
     <a class="btn btn-dark btn-icon rounded-circle" aria-controls="sidebarLeft" tabindex="1"
-       (click)="_layoutService.isSidebarLeftCollapsed=!_layoutService.isSidebarLeftCollapsed" [attr.aria-expanded]="!_layoutService.isSidebarLeftCollapsed">
+       (click)="layoutService.isSidebarLeftCollapsed=!layoutService.isSidebarLeftCollapsed" [attr.aria-expanded]="!layoutService.isSidebarLeftCollapsed">
       <i class="fa fa-navicon"></i>
     </a>
   </div>
@@ -84,7 +84,7 @@
 
     <li class="m-sm-1 m-md-2">
       <a class="btn btn-light btn-icon rounded-circle" aria-controls="sidebarRight" tabindex="2"
-         (click)="_layoutService.isSidebarRightCollapsed=!_layoutService.isSidebarRightCollapsed" [attr.aria-expanded]="!_layoutService.isSidebarRightCollapsed">
+         (click)="layoutService.isSidebarRightCollapsed=!layoutService.isSidebarRightCollapsed" [attr.aria-expanded]="!layoutService.isSidebarRightCollapsed">
         <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
       </a>
     </li>
