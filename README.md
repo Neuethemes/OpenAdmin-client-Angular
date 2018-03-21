@@ -4,7 +4,11 @@
 Free Premium Angular5 Admin Dashboard Theme.
 
 ## See the Live Preview
-http://openadmin.neuethemes.net/client/html/
+http://openadmin.neuethemes.net/client/angular
+
+Login: demo@demo.demo
+
+Password: demo
 
 ![divider](https://neuethemes.net/wp-content/uploads/transparent-30.png "divider")
 
