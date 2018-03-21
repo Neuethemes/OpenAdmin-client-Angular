@@ -51,11 +51,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ![divider](https://neuethemes.net/wp-content/uploads/transparent-30.png "divider")
 
+## See also
+
 #### [OpenAdmin Dashboard Project Main Github Page](https://github.com/Neuethemes/OpenAdmin)
 
 ![divider](https://neuethemes.net/wp-content/uploads/transparent-20.png "divider")
 
-## Another OpenAdmin Client versions
+### Another OpenAdmin Client versions
 
 #### [Free HTML5 Bootstrap4 OpenAdmin Dashboard](https://github.com/Neuethemes/OpenAdmin-client-Html)
 #### [Free React OpenAdmin Dashboard](https://github.com/Neuethemes/OpenAdmin-client-React)
@@ -63,7 +65,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ![divider](https://neuethemes.net/wp-content/uploads/transparent-20.png "divider")
 
-## Available Servers
+### Available Servers
 
 #### [Free NodeJS OpenAdmin Server](https://github.com/Neuethemes/OpenAdmin-server-NodeJS)
 #### [Free Python OpenAdmin Server](https://github.com/Neuethemes/OpenAdmin-server-Python)
@@ -71,7 +73,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ![divider](https://neuethemes.net/wp-content/uploads/transparent-30.png "divider")
 
-## Main Dashboard Screenshot
+### Main Dashboard Screenshot
 
 ![OpenAdmin Dashboard](https://neuethemes.net/wp-content/uploads/01-openadmin-screen-01.jpg "OpenAdmin Dashboard")
 
