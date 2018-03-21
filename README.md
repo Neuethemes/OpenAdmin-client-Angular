@@ -1,7 +1,7 @@
 ![OpenAdmin Dashboard Banner](https://neuethemes.net/wp-content/uploads/github-slide-02.jpg "OpenAdmin Banner")
 
 # Free Angular OpenAdmin Dashboard
-Free Premium Angular Admin Dashboard Theme.
+Free Premium Angular5 Admin Dashboard Theme.
 
 ## See the Live Preview
 http://openadmin.neuethemes.net/client/html/
@@ -9,7 +9,7 @@ http://openadmin.neuethemes.net/client/html/
 ![divider](https://neuethemes.net/wp-content/uploads/transparent-30.png "divider")
 
 [<img align="left" src="https://neuethemes.net/wp-content/uploads/logos-tech-02-angular.jpg" alt="OpenAdmin Angular">](https://github.com/Neuethemes/OpenAdmin-client-Angular)
-Do yourself a big favor and avoid creating an Admin Dashboard for your application from the ground up. Instead, pick any of these Angular template and save yourself a lot of time. Rather spend all this time on building your web app and bring it to an entirely new level while the admin keeps track of everything.
+Angular 5 takes a web component-based approach to build powerful applications for the web. It is used along with TypeScript which provides support for ECMAScript 5, ECMAScript 6, and ECMAScript 7.
 
 ![divider](https://neuethemes.net/wp-content/uploads/transparent-30.png "divider")
 
