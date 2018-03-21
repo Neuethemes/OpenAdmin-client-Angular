@@ -1,21 +1,20 @@
-import { Component } from '@angular/core';
-import { LayoutService } from "../../../services/layout.service";
-import { DataService } from "../../../services/data.service";
+import { Component, OnInit } from '@angular/core';
+import { LayoutService } from '../../../services/layout.service';
+import { DataService } from '../../../services/data.service';
 
 @Component({
   selector: 'layout-sidebar-right',
   templateUrl: './sidebar-right.component.html'
 })
 
-export class LayoutSidebarRightComponent {
-    messages: Array<any>;
+export class LayoutSidebarRightComponent implements OnInit {
+  messages: Array<any>;
 
-    constructor(
-        private _layoutService: LayoutService,
-        private _dataService: DataService
-    ) {
-        _dataService.getMessages().subscribe(response => {
-            this.messages = response.data;
-        });
-    }
+  constructor(public layoutService: LayoutService, private _dataService: DataService) {}
+
+  ngOnInit() {
+    this._dataService.getMessages().subscribe(response => {
+      this.messages = response.data;
+    });
+  }
 }

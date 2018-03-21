@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User } from "../models/user.model";
-import { UserService } from "./user.service";
+import { User } from '../models/user.model';
+import { UserService } from './user.service';
 
 @Injectable()
 export class AuthenticationService {
   constructor(
     private _http: HttpClient,
     private _userService: UserService
-  ) { }
+  ) {}
 
   public login(email: string, password: string) {
-    return this._http.post('/user/authenticate', { email: email, password: password });
+    return this._http.post('/user/authenticate', {email: email, password: password});
   }
 
   public logout() {

@@ -1,20 +1,20 @@
-import { NgModule }              from '@angular/core';
-import { RouterModule, Routes }  from '@angular/router';
-import { AuthGuard }             from "../auth/services/auth-guard.service";
-import { PageChartsComponent }       from "./components/pages/charts/charts.component";
-import { PageDashboardComponent }    from "./components/pages/dashboard/dashboard.component";
-import { PageNotFoundComponent } from "./components/pages/not-found/not-found.component";
-import { LayoutComponent }       from "./components/layout/layout.component";
-import { PageWidgetsComponent }      from "./components/pages/widgets/widgets.component";
-import { PageTablesComponent }       from "./components/pages/tables/tables.component";
-import { PageGridComponent }         from "./components/pages/grid/grid.component";
-import { PageButtonsComponent }      from "./components/pages/buttons/buttons.component";
-import { PageTypographyComponent }   from "./components/pages/typography/typography.component";
-import { PageIconsComponent }        from "./components/pages/icons/icons.component";
-import { PageNavsComponent }         from "./components/pages/navs/navs.component";
-import { PageBadgesComponent }       from "./components/pages/badges/badges.component";
-import { PageProgressComponent }     from "./components/pages/progress/progress.component";
-import { PageFormsComponent } from "./components/pages/forms/forms.component";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from '../auth/services/auth-guard.service';
+import { PageChartsComponent } from './components/pages/charts/charts.component';
+import { PageDashboardComponent } from './components/pages/dashboard/dashboard.component';
+import { PageNotFoundComponent } from './components/pages/not-found/not-found.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { PageWidgetsComponent } from './components/pages/widgets/widgets.component';
+import { PageTablesComponent } from './components/pages/tables/tables.component';
+import { PageGridComponent } from './components/pages/grid/grid.component';
+import { PageButtonsComponent } from './components/pages/buttons/buttons.component';
+import { PageTypographyComponent } from './components/pages/typography/typography.component';
+import { PageIconsComponent } from './components/pages/icons/icons.component';
+import { PageNavsComponent } from './components/pages/navs/navs.component';
+import { PageBadgesComponent } from './components/pages/badges/badges.component';
+import { PageProgressComponent } from './components/pages/progress/progress.component';
+import { PageFormsComponent } from './components/pages/forms/forms.component';
 
 const coreRoutes: Routes = [
   {
@@ -149,4 +149,5 @@ const coreRoutes: Routes = [
     RouterModule
   ]
 })
-export class CoreRoutingModule { }
+export class CoreRoutingModule {
+}

@@ -1,8 +1,8 @@
 <div class="navbar navbar-light bg-white px-3 px-sm-5 py-3">
 
   <div class="d-inline-block mr-3">
-    <a class="btn btn-dark btn-icon rounded-circle" aria-controls="sidebarLeft" tabindex="1"
-       (click)="_layoutService.isSidebarLeftCollapsed=!_layoutService.isSidebarLeftCollapsed" [attr.aria-expanded]="!_layoutService.isSidebarLeftCollapsed">
+    <a class="btn btn-dark btn-icon rounded-circle shadow-00" aria-controls="sidebarLeft" tabindex="1"
+       (click)="layoutService.isSidebarLeftCollapsed=!layoutService.isSidebarLeftCollapsed" [attr.aria-expanded]="!layoutService.isSidebarLeftCollapsed">
       <i class="fa fa-navicon"></i>
     </a>
   </div>
@@ -21,7 +21,7 @@
   <ul class="nav ml-auto">
 
     <li class="m-sm-1 m-md-2" ngbDropdown>
-      <a class="btn btn-light btn-icon rounded-circle position-relative" ngbDropdownToggle id="dropdownBasic1">
+      <a class="btn btn-light btn-icon rounded-circle position-relative shadow-00" ngbDropdownToggle id="dropdownBasic1">
         <i class="fa fa-bell" aria-hidden="true"></i>
         <span class="badge badge-hint badge-primary">8</span>
       </a>
@@ -65,7 +65,7 @@
     </li>
 
     <li class="m-sm-1 m-md-2" ngbDropdown>
-      <a class="btn btn-light btn-icon rounded-circle position-relative" ngbDropdownToggle id="dropdownBasic2">
+      <a class="btn btn-light btn-icon rounded-circle position-relative shadow-00" ngbDropdownToggle id="dropdownBasic2">
         <i class="fa fa-envelope" aria-hidden="true"></i>
         <span class="badge badge-hint badge-success">16</span>
       </a>
@@ -83,8 +83,8 @@
     </li>
 
     <li class="m-sm-1 m-md-2">
-      <a class="btn btn-light btn-icon rounded-circle" aria-controls="sidebarRight" tabindex="2"
-         (click)="_layoutService.isSidebarRightCollapsed=!_layoutService.isSidebarRightCollapsed" [attr.aria-expanded]="!_layoutService.isSidebarRightCollapsed">
+      <a class="btn btn-light btn-icon rounded-circle shadow-00" aria-controls="sidebarRight" tabindex="2"
+         (click)="layoutService.isSidebarRightCollapsed=!layoutService.isSidebarRightCollapsed" [attr.aria-expanded]="!layoutService.isSidebarRightCollapsed">
         <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
       </a>
     </li>

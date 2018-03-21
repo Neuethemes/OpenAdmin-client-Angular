@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { AuthenticationService } from "../../services/authentication.service";
+import { AuthenticationService } from '../../services/authentication.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { User } from "../../models/user.model";
+import { User } from '../../models/user.model';
 
 @Component({
   templateUrl: './register.component.html',
@@ -43,8 +43,11 @@ export class RegisterComponent implements OnInit {
   }
 
   get firstName() { return this.registerForm.get('firstName'); }
+
   get lastName() { return this.registerForm.get('lastName'); }
+
   get email() { return this.registerForm.get('email'); }
+
   get matchingPassword() { return this.registerForm.get('matchingPassword'); }
 
   passwordValidator(g: FormGroup) {

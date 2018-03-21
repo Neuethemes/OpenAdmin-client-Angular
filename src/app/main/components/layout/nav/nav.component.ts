@@ -6,4 +6,7 @@ import { Component } from '@angular/core';
 })
 
 export class LayoutNavComponent {
+  showItem: number;
+  showSubItem1: boolean;
+  showSubItem2: boolean;
 }

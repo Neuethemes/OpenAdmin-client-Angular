@@ -1,10 +1,12 @@
 <!-- Left Sidebar -->
-<div class="sidebar-left bg-dark text-light pl-0 pr-0" id="sidebar-left" [ngbCollapse]="_layoutService.isSidebarLeftCollapsed">
+<div class="sidebar-left bg-dark text-light pl-0 pr-0" id="sidebar-left" [ngbCollapse]="layoutService.isSidebarLeftCollapsed">
   <div class="collapse-wrapper">
     <app-logo></app-logo>
     <layout-nav></layout-nav>
     <div class="mt-4 mx-4 d-none d-lg-block" *ngIf="monitoring">
-      <app-progress-list [list]="monitoring.data"></app-progress-list>
+      <app-widget [header]="" [addClass]="'widget-dark bg-gray-700 border-dark'" [excerpt]="">
+        <app-progress-list [list]="monitoring.data"></app-progress-list>
+      </app-widget>
     </div>
   </div>
 </div>
